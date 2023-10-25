@@ -17,8 +17,6 @@ func main() {
 	}
 
 	switch model.Result.Action {
-	case "shell":
-		utils.SysExecShell(os.Getenv("SHELL"))
 	case "tmux":
 		model.Tmux.ExecSession(model.Result.Value)
 	}
