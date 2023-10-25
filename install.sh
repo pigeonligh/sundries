@@ -2,6 +2,10 @@
 
 set -e
 
+function install_terminal_clock {
+    go install ./cmd/terminal-clock
+}
+
 function install_tmux_entrance {
     go install ./cmd/tmux-entrance
 
@@ -12,6 +16,7 @@ function install {
     mkdir -p $HOME/.pigeonligh-sundries
     cp scripts/source.sh $HOME/.pigeonligh-sundries/source
     
+    install_terminal_clock
     install_tmux_entrance
 
     echo "write the following command into your .zshrc and re-source:"
