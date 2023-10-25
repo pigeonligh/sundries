@@ -5,7 +5,7 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	tmuxentrance "github.com/pigeonligh/sundries/pkg/models/tmux-entrance"
+	tmuxentrance "github.com/pigeonligh/sundries/pkg/bubbletea/models/tmux-entrance"
 	"github.com/pigeonligh/sundries/pkg/utils"
 )
 
